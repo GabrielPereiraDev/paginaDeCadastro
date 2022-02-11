@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #161624;
+    color: rgb(253, 250, 246);
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+section.imageSVG {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
+
+section.imageSVG img {
+    width: 500px;
+}
+
+main {
+    text-align: center;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #5757C9;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column; 
+}
+
+main form input {
+    text-align: center;
+    background: #292d3a;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgb(172, 168, 168);
+    font-size: 1rem;
+    border: 1px solid #0e131b;
+    border-radius: 20px;
+    margin-top: 2.5rem;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 2.5rem;
+    border: none;
+    border-radius: 20px;
+    background: #6C63ff;
+    color: white;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background-color: #403ab1;
+} 
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.imageSVG img {
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.imageSVG {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
